@@ -17,8 +17,8 @@ from IPython.display import display  # used for display of widgets
 # Chart Functions
 #####################################
 
-def plot_scatter_plot(penguins_df: pd.DataFrame):
-    """Create and display a scatter plot for the Penguins dataset."""
+def plot_scatter_plot(exercise_df: pd.DataFrame):
+    """Create and display a scatter plot for the Exercise dataset."""
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.scatterplot(
         data=penguins_df, x="flipper_length_mm", y="body_mass_g", hue="species", ax=ax
